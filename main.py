@@ -8,6 +8,12 @@ import streamlit as st
 client = OpenAI(api_key=st.secrets["OPENAI_API_KEY"])
 
 # 3. Set Title
+st.set_page_config(
+    page_title="ChatGPT-4o",
+    page_icon="✨",
+    layout="centered",
+    initial_sidebar_state="auto",
+)
 st.title("Dongyang High school's ChatGPT")
 
 # 4. Initialize chat history
